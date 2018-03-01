@@ -1,0 +1,790 @@
+<div class="" *ngIf='!isAddViewOn'>
+    <div class="col-md-12 bg-software-gray-1 hidden-sm-down margin-top" *ngIf="!isSearchEditEnabled">
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Client Name </th>
+                                <td>British</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Start Date </th>
+                                <td>12/02/2018</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription End Date </th>
+                                <td>13/02/2022</td>
+                            </tr>
+                            <tr>
+                                <th>Invoice Status </th>
+                                <td>Paid</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Status</th>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <th>Supress Subscription Notifiation </th>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>Is Client Active </th>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Key Contact Name </th>
+                                <td>John Davis</td>
+                            </tr>
+                            <tr>
+                                <th>Company Legal Name </th>
+                                <td>British Cooperation</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>john.davis@britishtele.com</td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td>202902911</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>Address Line 1</td>
+                            </tr>
+                            <tr>
+                                <th>City</th>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <td>United Kingdom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-2 button-top hidden-sm-down">
+                <button type="button" class="btn btn-primary float-xs-right" name="editButton" (click)="edit()">Edit</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-software-gray-1 hidden-md-up margin-top" *ngIf="!isSearchEditEnabled">
+        <div class="">
+            <div class="table-responsive table-container">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Client Name </th>
+                            <td>British</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription Start Date </th>
+                            <td>12/02/2018</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription End Date </th>
+                            <td>13/02/2022</td>
+                        </tr>
+                        <tr>
+                            <th>Invoice Status </th>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription Status</th>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <th>Supress Subscription Notifiation </th>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <th>Is Client Active </th>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th>Key Contact Name </th>
+                            <td>John Davis</td>
+                        </tr>
+                        <tr>
+                            <th>Company Legal Name </th>
+                            <td>British Cooperation</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>john.davis@britishtele.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>202902911</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>Address Line 1</td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td>London</td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td>United Kingdom</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10">
+            </div>
+            <div class="col-md-2 button-top hidden-sm-down">
+                <button type="button" class="btn btn-primary float-xs-right" name="editButton" (click)="edit()">Edit</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 bg-software-gray-1 hidden-sm-down margin-top" *ngIf="isSearchEditEnabled">
+        <div class="col-md-12">
+            <p class='text-xs-right' *ngIf="isSearchEditEnabled"><span style='color:red;'>*</span>Required field</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <div class="table-responsive table-container">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Client Name<span style='color:red;'>*</span> </th>
+                                    <td><input type="text" class="form-control" value="British" /></td>
+
+                                </tr>
+                                <tr>
+                                    <th>Subscription Start Date<span style='color:red;'>*</span> </th>
+                                    <td><input type="text" class="form-control" value="12/02/2018" /></td>
+
+                                </tr>
+                                <tr>
+                                    <th>Subscription End Date<span style='color:red;'>*</span> </th>
+                                    <td><input type="text" class="form-control" value="13/02/2022" /></td>
+
+                                </tr>
+                                <tr>
+                                    <th>Invoice Status<span style='color:red;'>*</span> </th>
+                                    <td><select class="form-control">
+                    <option value="volvo">Paid</option>
+                    <option value="saab">Not Paid</option>
+                  </select></td>
+                                </tr>
+                                <tr>
+                                    <th>Subscription Status<span style='color:red;'>*</span></th>
+                                    <td><select class="form-control">
+                    <option value="volvo">Active</option>
+                    <option value="saab">Inactive</option>
+                  </select> </td>
+                                </tr>
+                                <tr>
+                                    <th>Supress Subscription Notifiation<span style='color:red;'>*</span> </th>
+                                    <td>
+                                        <a *ngIf='supressSubscriptionNotification' (click)='supressSubscriptionNotification=!supressSubscriptionNotification'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                        <a *ngIf='!supressSubscriptionNotification' (click)='supressSubscriptionNotification=!supressSubscriptionNotification'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Is Client Active<span style='color:red;'>*</span> </th>
+                                    <td>
+                                        <a *ngIf='isClientActive' (click)='isClientActive=!isClientActive'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                        <a *ngIf='!isClientActive' (click)='isClientActive=!isClientActive'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-10">
+                    <div class="table-responsive table-container">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Key Contact Name<span style='color:red;'>*</span> </th>
+                                    <td><input type="text" class="form-control" value="John Davis" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Company Legal Name<span style='color:red;'>*</span> </th>
+                                    <td><input type="text" class="form-control" value="British Cooperation" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Email<span style='color:red;'>*</span></th>
+                                    <td><input type="text" class="form-control" value="john.davis@britishtele.com" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Phone<span style='color:red;'>*</span></th>
+                                    <td><input type="text" class="form-control" value="202902911" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Address<span style='color:red;'>*</span></th>
+                                    <td><input type="text" class="form-control" value="Address Line 1" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>City<span style='color:red;'>*</span></th>
+                                    <td><input type="text" class="form-control" value="London" /> </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Country<span style='color:red;'>*</span></th>
+                                    <td><input type="text" class="form-control" value="United Kingdom" /> </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-2 button-top" *ngIf="!isSearchEditEnabled">
+                    <button type="button" class="btn btn-primary float-xs-right" name="editButton" (click)="edit()">Edit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-software-gray-1 hidden-md-up margin-top" *ngIf="isSearchEditEnabled">
+        <div class="col-md-12">
+            <p class='text-xs-right' *ngIf="isSearchEditEnabled"><span style='color:red;'>*</span>Required field</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Client Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="British" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Subscription Start Date<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="12/02/2018" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Subscription End Date<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="13/02/2022" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Invoice Status<span style='color:red;'>*</span> </th>
+                                <td><select class="form-control">
+                    <option value="volvo">Paid</option>
+                    <option value="saab">Not Paid</option>
+                  </select></td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Status<span style='color:red;'>*</span></th>
+                                <td><select class="form-control">
+                    <option value="volvo">Active</option>
+                    <option value="saab">Inactive</option>
+                  </select> </td>
+                            </tr>
+                            <tr>
+                                <th>Supress Subscription Notifiation<span style='color:red;'>*</span> </th>
+                                <td>
+                                    <a *ngIf='supressSubscriptionNotification' (click)='supressSubscriptionNotification=!supressSubscriptionNotification'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                    <a *ngIf='!supressSubscriptionNotification' (click)='supressSubscriptionNotification=!supressSubscriptionNotification'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Is Client Active<span style='color:red;'>*</span> </th>
+                                <td>
+                                    <a *ngIf='isClientActive' (click)='isClientActive=!isClientActive'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                    <a *ngIf='!isClientActive' (click)='isClientActive=!isClientActive'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Key Contact Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="John Davis" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Company Legal Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="British Cooperation" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Email<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="john.davis@britishtele.com" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Phone<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="202902911" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Address<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="Address Line 1" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>City<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="London" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Country<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="United Kingdom" /> </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--Add Subscription View-->
+<div class="" *ngIf='isAddViewOn'>
+    <div class="col-md-12 bg-software-gray-1 hidden-sm-down margin-top" *ngIf="!isAddEditEnabled">
+        <div class="col-md-12">
+            <p class='text-xs-right'><span style='color:red;'>*</span>Required field</p>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Client Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Subscription Start Date<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Subscription End Date<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="" /></td>
+
+                            </tr>
+                            <tr>
+                                <th>Invoice Status<span style='color:red;'>*</span> </th>
+                                <td><select class="form-control">
+                    <option value="volvo">Paid</option>
+                    <option value="saab">Not Paid</option>
+                  </select></td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Status<span style='color:red;'>*</span></th>
+                                <td><select class="form-control">
+                    <option value="volvo">Active</option>
+                    <option value="saab">Inactive</option>
+                  </select> </td>
+                            </tr>
+                            <tr>
+                                <th>Supress Subscription Notifiation<span style='color:red;'>*</span> </th>
+                                <td>
+                                    <a *ngIf='supressSubscriptionNotificationOnAdd' (click)='supressSubscriptionNotificationOnAdd=!supressSubscriptionNotificationOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                    <a *ngIf='!supressSubscriptionNotificationOnAdd' (click)='supressSubscriptionNotificationOnAdd=!supressSubscriptionNotificationOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Is Client Active<span style='color:red;'>*</span> </th>
+                                <td>
+                                    <a *ngIf='isClientActiveOnAdd' (click)='isClientActiveOnAdd=!isClientActiveOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                    <a *ngIf='!isClientActiveOnAdd' (click)='isClientActiveOnAdd=!isClientActiveOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Key Contact Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Company Legal Name<span style='color:red;'>*</span> </th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Email<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Phone<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Address<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>City<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                            <tr>
+                                <th>Country<span style='color:red;'>*</span></th>
+                                <td><input type="text" class="form-control" value="" /> </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-software-gray-1 hidden-md-up margin-top" *ngIf="!isAddEditEnabled">
+        <div class="col-md-12">
+            <p class='text-xs-right'><span style='color:red;'>*</span>Required field</p>
+        </div>
+        <div class="col-md-12">
+            <div class="table-responsive table-container">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Client Name<span style='color:red;'>*</span> </th>
+                            <td><input type="text" class="form-control" value="" /></td>
+
+                        </tr>
+                        <tr>
+                            <th>Subscription Start Date<span style='color:red;'>*</span> </th>
+                            <td><input type="text" class="form-control" value="" /></td>
+
+                        </tr>
+                        <tr>
+                            <th>Subscription End Date<span style='color:red;'>*</span> </th>
+                            <td><input type="text" class="form-control" value="" /></td>
+
+                        </tr>
+                        <tr>
+                            <th>Invoice Status<span style='color:red;'>*</span> </th>
+                            <td><select class="form-control">
+                    <option value="volvo">Paid</option>
+                    <option value="saab">Not Paid</option>
+                  </select></td>
+                        </tr>
+                        <tr>
+                            <th>Subscription Status<span style='color:red;'>*</span></th>
+                            <td><select class="form-control">
+                    <option value="volvo">Active</option>
+                    <option value="saab">Inactive</option>
+                  </select> </td>
+                        </tr>
+                        <tr>
+                            <th>Supress Subscription Notifiation<span style='color:red;'>*</span> </th>
+                            <td>
+                                <a *ngIf='supressSubscriptionNotificationOnAdd' (click)='supressSubscriptionNotificationOnAdd=!supressSubscriptionNotificationOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                <a *ngIf='!supressSubscriptionNotificationOnAdd' (click)='supressSubscriptionNotificationOnAdd=!supressSubscriptionNotificationOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Is Client Active<span style='color:red;'>*</span> </th>
+                            <td>
+                                <a *ngIf='isClientActiveOnAdd' (click)='isClientActiveOnAdd=!isClientActiveOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Default_on.svg" alt=""></a>
+                                <a *ngIf='!isClientActiveOnAdd' (click)='isClientActiveOnAdd=!isClientActiveOnAdd'><img class='img-responsive' height="30px" src="./assets/images/Off.svg" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Key Contact Name<span style='color:red;'>*</span> </th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>Company Legal Name<span style='color:red;'>*</span> </th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>Email<span style='color:red;'>*</span></th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>Phone<span style='color:red;'>*</span></th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>Address<span style='color:red;'>*</span></th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>City<span style='color:red;'>*</span></th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                        <tr>
+                            <th>Country<span style='color:red;'>*</span></th>
+                            <td><input type="text" class="form-control" value="" /> </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 bg-software-gray-1 hidden-sm-down margin-top" *ngIf="isAddEditEnabled">
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Client Name </th>
+                                <td>British</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Start Date </th>
+                                <td>12/02/2018</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription End Date </th>
+                                <td>13/02/2022</td>
+                            </tr>
+                            <tr>
+                                <th>Invoice Status </th>
+                                <td>Paid</td>
+                            </tr>
+                            <tr>
+                                <th>Subscription Status</th>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <th>Supress Subscription Notifiation </th>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>Is Client Active </th>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10">
+                <div class="table-responsive table-container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Key Contact Name </th>
+                                <td>John Davis</td>
+                            </tr>
+                            <tr>
+                                <th>Company Legal Name </th>
+                                <td>British Cooperation</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>john.davis@britishtele.com</td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td>202902911</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>Address Line 1</td>
+                            </tr>
+                            <tr>
+                                <th>City</th>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <td>United Kingdom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-2 button-top hidden-sm-down">
+                <button type="button" class="btn btn-primary float-xs-right" name="editButton" (click)="addEdit()">Edit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-software-gray-1 hidden-md-up margin-top" *ngIf="isAddEditEnabled">
+        <div class="col-md-12">
+            <div class="table-responsive table-container">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Client Name </th>
+                            <td>British</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription Start Date </th>
+                            <td>12/02/2018</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription End Date </th>
+                            <td>13/02/2022</td>
+                        </tr>
+                        <tr>
+                            <th>Invoice Status </th>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <th>Subscription Status</th>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <th>Supress Subscription Notifiation </th>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <th>Is Client Active </th>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th>Key Contact Name </th>
+                            <td>John Davis</td>
+                        </tr>
+                        <tr>
+                            <th>Company Legal Name </th>
+                            <td>British Cooperation</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>john.davis@britishtele.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>202902911</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>Address Line 1</td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td>London</td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td>United Kingdom</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10">
+
+            </div>
+            <div class="col-md-2 button-top hidden-sm-down">
+                <button type="button" class="btn btn-primary float-xs-right" name="editButton" (click)="addEdit()">Edit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="col-md-12" style="margin-top:20px;">
+    <hr>
+</div>
+<div class="hidden-sm-down">
+    <div class="" *ngIf='!isAddViewOn'>
+        <div *ngIf="!isSearchEditEnabled">
+            <button type="button" class="btn btn-secondary float-xs-left" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" class="btn btn-primary float-xs-right" (click)='navigateToUserManagement()' name="continueButton">Continue</button>
+        </div>
+        <div *ngIf="isSearchEditEnabled">
+            <button type="button" class="btn btn-secondary float-xs-left" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" class="btn btn-primary float-xs-right margin-set-left" name="saveButton" (click)='navigateToUserManagement()'>Continue</button>
+            <button type="button" class="btn btn-secondary float-xs-right margin-set-right" name="cancelButton" (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+    <div class="" *ngIf='isAddViewOn'>
+        <div *ngIf="!isAddEditEnabled">
+            <button type="button" class="btn btn-secondary float-xs-left" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" class="btn btn-primary float-xs-right margin-set-left" (click)='navigateToUserManagement()' name="saveButton">Continue</button>
+            <button type="button" *ngIf='isAddEditSaved' class="btn btn-secondary float-xs-right margin-set-right" name="cancelButton" (click)="addCancel()">Cancel</button>
+        </div>
+        <div *ngIf="isAddEditEnabled">
+            <button type="button" class="btn btn-secondary float-xs-left" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" class="btn btn-primary float-xs-right" (click)='navigateToUserManagement()' name="continueButton">Continue</button>
+        </div>
+    </div>
+</div>
+<div class="hidden-md-up">
+    <div class="" *ngIf='!isAddViewOn'>
+        <div *ngIf="!isSearchEditEnabled">
+            <button type="button" class="btn btn-primary btn-block" name="editButton" (click)="edit()">Edit</button>
+            <button type="button" class="btn btn-secondary btn-block" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" class="btn btn-primary btn-block" (click)='navigateToUserManagement()' name="continueButton">Continue</button>
+        </div>
+        <div *ngIf="isSearchEditEnabled">
+            <button type="button" class="btn btn-primary btn-block" name="saveButton" (click)="save()">Save</button>
+            <button type="button" class="btn btn-secondary btn-block" name="cancelButton" (click)="cancel()">Cancel</button>
+            <button type="button" class="btn btn-secondary btn-block" (click)='navigateToClientInfo()' name="backButton">Back</button>
+        </div>
+    </div>
+    <div class="" *ngIf='isAddViewOn'>
+        <div *ngIf="!isAddEditEnabled">
+            <button type="button" class="btn btn-primary btn-block" (click)='navigateToUserManagement()' name="saveButton">Continue</button>
+            <button type="button" class="btn btn-secondary btn-block" (click)='navigateToClientInfo()' name="backButton">Back</button>
+            <button type="button" *ngIf='isAddEditSaved' class="btn btn-secondary btn-block" name="cancelButton" (click)="addCancel()">Cancel</button>
+        </div>
+        <div *ngIf="isAddEditEnabled">
+            <button type="button" class="btn btn-primary btn-block" (click)='navigateToUserManagement()' name="continueButton">Continue</button>
+            <button type="button" class="btn btn-secondary btn-block" (click)='navigateToClientInfo()' name="backButton">Back</button>
+
+        </div>
+    </div>
+</div>

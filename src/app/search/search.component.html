@@ -1,0 +1,382 @@
+<!--<div class="row">
+    <div class="col-md-12">
+        <div class="card card-tabs">
+            <div class="card-header">
+                <!--<h4 class="display-4 float-xs-left">
+                    Standard Card Tabs</h4>-->
+<ul class="nav nav-tabs card-header-tabs float-xs-left">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#year">Year of Loss</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#location">Location</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link" data-toggle="tab" href="#loss">Loss Details</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link" data-toggle="tab" href="#claim">Claim US$</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link" data-toggle="tab" href="#well">Well Details</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link" data-toggle="tab" href="#cost">Cost Categories</a>
+    </li>
+</ul>
+</div>
+<div class="tab-content card-block">
+    <div id="year" class="tab-pane fade in active card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="location" class="tab-pane fade card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="area">Area</label>
+                                <select class="form-control" size='10' id="area" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="form-control" id="country" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" class="form-control" id="location">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="gom">GOM Area</label>
+                                <select class="form-control" id="gom" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="uslc">US Location Code</label>
+                                <select class="form-control" id="uslc" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="uslc">Land/OffShore</label>
+                                <select class="form-control" id="uslc" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loss" class="tab-pane fade card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select class="form-control" size='5' id="category" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="subcategory">Subcategory</label>
+                                <select class="form-control" size='5' id="subcategory" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="subcategory2">Subcategory 2</label>
+                                <select class="form-control" size='5' id="subcategory2" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="car/op">CAR/OP</label>
+                                <select class="form-control" size='5' id="car/op" multiple>
+                                              <option value='all'>&lt;All Types&gt;</option>
+                                              <option value='car'>Car</option>
+                                              <option value='idle'>Idle</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="losstype">Loss Type</label>
+                                <select class="form-control" size='5' id="losstype" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="cause">Cause</label>
+                                <select class="form-control" size='5' id="cause" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="updownpower">Up/Down/Power</label>
+                                <select class="form-control" size='5' id="updownpower" multiple>
+                                              <option value='all'>&lt;All Types&gt;</option>
+                                              <option value='down'>Downstream</option>
+                                              <option value='power'>Power</option>     
+                                            <option value='up'>Upstream</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="event">Event</label>
+                                <select class="form-control" size='5' id="event" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="claim" class="tab-pane fade card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th width='5%'></th>
+                                    <th width='19%'>PD</th>
+                                    <th width='19%'>OEE</th>
+                                    <th width='19%'>BI</th>
+                                    <th width='19%'>Total</th>
+                                    <th width='19%'>Total Indexed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Min</th>
+                                    <td><input type="text" class="form-control" id="PDmin"></td>
+                                    <td><input type="text" class="form-control" id="OEEmin"></td>
+                                    <td><input type="text" class="form-control" id="BImin"></td>
+                                    <td><input type="text" class="form-control" id="Totalmin"></td>
+                                    <td><input type="text" class="form-control" id="TotalIndexedmin"></td>
+                                </tr>
+                                <tr>
+                                    <th>Max</th>
+                                    <td><input type="text" class="form-control" id="PDmax"></td>
+                                    <td><input type="text" class="form-control" id="OEEmax"></td>
+                                    <td><input type="text" class="form-control" id="BImax"></td>
+                                    <td><input type="text" class="form-control" id="Totalmax"></td>
+                                    <td><input type="text" class="form-control" id="TotalIndexedmax"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="well" class="tab-pane fade card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="ratingarea">Rating Area</label>
+                                <select class="form-control" size='10' id="ratingarea" multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="welltype">Well Type</label>
+                                <select class="form-control" id="welltype" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="drillingstatus">Drilling Status</label>
+                                <select class="form-control" id="welltype" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="ugbo">UGBO</label>
+                                <select class="form-control" id="ugbo" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="depth">Depth Category</label>
+                                <select class="form-control" id="depth" size='10' multiple>
+                                              <option  *ngFor='let area of areaList' value='area.code'>{{area.name}}</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="PTD">PTD</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="min">Min</label>
+                                <input type="text" class="form-control" id="min">
+                                <!--<div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width='4%'>PTD</th>
+                                                            <th width='96%'></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Min</th>
+                                                            <td><input type="text" class="form-control" id="PTDmin"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Max</th>
+                                                            <td><input type="text" class="form-control" id="PTDmax"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>-->
+                            </div>
+                            <div class="form-group">
+                                <br>
+                            </div>
+                            <div class="form-group">
+                                <label for="max">Max</label>
+                                <input type="text" class="form-control" id="max">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cost" class="tab-pane fade card-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-software-gray-1">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th width='10%'></th>
+                                    <th width='30%'>PD Claim</th>
+                                    <th width='30%'>OEE Claim</th>
+                                    <th width='30%'>Total Claim</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Actual</th>
+                                    <td><select class="form-control" size='4' id="PDClaimActual" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                    <td><select class="form-control" size='4' id="OEEClaimActual" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                    <td><select class="form-control" size='4' id="TotalClaimActual" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                </tr>
+                                <tr>
+                                    <th>Indexed</th>
+                                    <td><select class="form-control" size='4' id="PDClaim" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                    <td><select class="form-control" size='4' id="OEEClaim" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                    <td><select class="form-control" size='4' id="TotalClaim" multiple>
+                                              <option  *ngFor='let claim of claimList' value='claim.value'>{{claim.value}}</option>
+                                            </select></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+    <div class="padding-button-footer">
+        <button type="button" class="btn btn-secondary pull-left hidden-sm-down " data-toggle="tab" href="#year">Back</button>
+        <button type="button" class="btn btn-primary pull-right hidden-sm-down " data-toggle="tab" href="#location">Continue</button>
+    </div>
+</div>
+</div>
+
+
+<!-- WTW Software Gray background -->
+<!--<div class="card card-tabs bg-software-gray-1">
+    <div class="card-header">
+        <h4 class="display-4 float-xs-left">Standard Card Tabs</h4>
+        <ul class="nav nav-tabs card-header-tabs float-xs-left">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active Tab</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tab</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled Tab</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-block">
+        <p class="card-text">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        </p>
+    </div>
+</div>-->-->

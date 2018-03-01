@@ -1,0 +1,248 @@
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .divClass {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .container {
+        width: 100%;
+    }
+    .select-extra-right {
+        margin-right: -15px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .divClass {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .shiftView {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1025px) {
+    .divClass {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .shiftView {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 2600px) and (min-width: 1501px) {
+    .divClass {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .shiftView {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/* -- */
+
+.p-top-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.margin-set-left {
+    margin-left: 6px;
+}
+
+.margin-set-right {
+    margin-right: 6px;
+}
+
+.margin-set {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+/* -- */
+
+
+/* -Routing CSS- */
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #009ed1;
+}
+
+.nav-horizontal .nav-link.active {
+    margin-top: -0.5rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.1rem;
+}
+
+.nav-horizontal {
+    padding-left: 0rem;
+}
+
+.divClass .text-gray-light {
+    margin-bottom: 1.5rem;
+}
+
+.nav-link {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 14px;
+    border-left-width: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+ul {
+    border-bottom: 1px solid #009ed1;
+}
+
+.text-gray-light {
+    color: #757575;
+}
+
+.text-gray-light.secondary {
+    color: #757575;
+    padding-top: 20px;
+}
+
+.btn-cd {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.table td {
+    border-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.table th.float-xs-right,
+th {
+    border-top: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #989898;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+hr.main-hr {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-ratings td,
+th {
+    border-top: 1px solid #eceeef;
+}
+
+.table.searchSubscription th {
+    padding-left: 0px;
+}
+
+.table.searchSubscription td {
+    padding: 0px;
+}
+
+.table-ratings th.no-top-border {
+    border-top: 0px solid #eceeef;
+}
+
+.table-documents th.border-top,
+.table-documents td.border-top {
+    border-top: 1px solid #eceeef;
+    padding-bottom: 10px;
+}
+
+.table-documents th.padding-bottom,
+.table-documents th.padding-bottom {
+    padding-bottom: 10px;
+}
+
+.th-black {
+    color: #000;
+}
+
+.gray-color {
+    color: #989898
+}
+
+.cs-mobile-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* -Routing CSS End- */
+
+.btn-invisible {
+    visibility: hidden;
+}
+
+.sub-top-margin {
+    margin-top: 20px;
+}
+
+.table tbody tr.highlight td {
+    background-color: #f4f4f4;
+}
+
+th.header-add-sub {
+    border-top: 0px solid #eceeef;
+}
+
+.addSubTableHeight {
+    height: 250px;
+}
+
+.table tr.active td {
+    background-color: #f4f4f4 !important;
+}
+
+.sub-add-btn {
+    /*background: #009ed1;*/
+    background: #00a0d2;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sub-add-btn a i {
+    color: #fff;
+}
+
+.sub-add-btn-mob {
+    /*background: #009ed1;*/
+    background: #00a0d2;
+    color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 10px;
+}
+
+.sub-add-btn-mob a i {
+    color: #fff;
+}
+
+.btn-margin-left {
+    margin-left: 6px;
+}
+
+.btn-margin-right {
+    margin-right: 6px;
+}

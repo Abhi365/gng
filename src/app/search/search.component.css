@@ -1,0 +1,17 @@
+.card-tabs .card-header {
+    border-bottom: 1px solid #00607d;
+}
+
+.table thead th {
+    border-bottom: 0px solid #eceeef;
+}
+
+.table th,
+.table td {
+    border-top: 0px solid #eceeef;
+}
+
+.padding-button-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
